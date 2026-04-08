@@ -1,0 +1,39 @@
+{
+  "name": "المسح الذكي",
+  "short_name": "المسح الذكي",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f7f9fa",
+  "theme_color": "#1cb0f6",
+  "description": "تطبيق المسح الذكي لتنظيف وتعديل المستندات والصور باستخدام الذكاء الاصطناعي",
+  "orientation": "portrait",
+  "icons":[
+    {
+      "src": "https://i.ibb.co/B8MhkW5/Smart-document-folder-202604082000.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://i.ibb.co/B8MhkW5/Smart-document-folder-202604082000.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "share_target": {
+    "action": "index.html?share-target=1",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "files":[
+        {
+          "name": "shared_images",
+          "accept": ["image/*"]
+        }
+      ]
+    }
+  }
+}
